@@ -1,0 +1,579 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #111;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 75px;
+    background: linear-gradient(
+        90deg,
+        #7b2cbf,
+        #4b176d,
+        #15101b
+    );
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 8%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+
+    flex: 1;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bfff;
+}
+
+
+/* ACTIVE PAGE */
+
+.nav-links a.active {
+    color: #00bfff;
+}
+
+
+/* ================= CONTACT TITLE ================= */
+
+.contact-title {
+    margin: 3px 2% 0;
+
+    height: 125px;
+
+    background: #36004d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title h1 {
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 64px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+    width: 74%;
+
+    margin: 48px auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.35fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+
+/* ================= LEFT SIDE ================= */
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+
+/* INFORMATION CARD */
+
+.info-card {
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 35px;
+
+    min-height: 345px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.30);
+}
+
+
+/* ICON */
+
+.info-icon {
+    font-size: 55px;
+
+    color: #111;
+
+    margin-bottom: 25px;
+}
+
+
+/* INDIA HEADING */
+
+.info-card h2 {
+    color: #9a2bd0;
+
+    font-size: 26px;
+
+    margin-bottom: 8px;
+}
+
+
+/* INDIA TEXT */
+
+.info-card p {
+    font-size: 20px;
+
+    line-height: 1.45;
+
+    font-weight: 500;
+}
+
+
+/* ================= CONTACT DETAILS ================= */
+
+.contact-details {
+    min-height: 260px;
+
+    padding: 25px;
+}
+
+
+/* DETAIL ROW */
+
+.detail-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+/* DETAIL ICON */
+
+.detail-icon {
+    width: 55px;
+
+    font-size: 50px;
+
+    color: black;
+
+    text-align: center;
+}
+
+
+/* DETAIL HEADING */
+
+.detail-item h2 {
+    margin-bottom: 8px;
+}
+
+
+/* DETAIL TEXT */
+
+.detail-item p {
+    font-size: 19px;
+}
+
+
+/* ================= FORM CARD ================= */
+
+.form-card {
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 65px 60px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.30);
+}
+
+
+/* FORM INPUTS */
+
+.form-card input,
+.form-card textarea {
+
+    width: 100%;
+
+    border: 1px solid #c9d1d9;
+
+    padding: 17px 14px;
+
+    font-size: 20px;
+
+    font-family: Arial, sans-serif;
+
+    margin-bottom: 30px;
+
+    outline: none;
+}
+
+
+/* INPUT FOCUS */
+
+.form-card input:focus,
+.form-card textarea:focus {
+    border: 1px solid #9a2bd0;
+}
+
+
+/* MESSAGE BOX */
+
+.form-card textarea {
+
+    height: 190px;
+
+    resize: vertical;
+}
+
+
+/* BUTTON */
+
+.form-card button {
+
+    display: block;
+
+    margin: 0 auto;
+
+    background: #982bd0;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 15px 40px;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* BUTTON HOVER */
+
+.form-card button:hover {
+    background: #7200a5;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= LEARNING CENTERS ================= */
+
+.learning-section {
+
+    width: 76%;
+
+    margin: 70px auto;
+
+    text-align: center;
+}
+
+
+.learning-section > h2 {
+
+    color: #982bd0;
+
+    font-size: 38px;
+
+    margin-bottom: 40px;
+}
+
+
+/* LEARNING CARD */
+
+.learning-card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    min-height: 325px;
+
+    padding: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 3px 14px rgba(0, 0, 0, 0.30);
+}
+
+
+/* LEARNING ICON */
+
+.learning-icon {
+
+    font-size: 100px;
+
+    color: black;
+
+    margin-bottom: 25px;
+}
+
+
+/* PUNE HEADING */
+
+.learning-card h3 {
+
+    color: #982bd0;
+
+    font-size: 27px;
+
+    margin-bottom: 12px;
+}
+
+
+/* PUNE ADDRESS */
+
+.learning-card p {
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    min-height: 250px;
+
+    padding: 60px 10%;
+
+    background-color: #171717;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 60px;
+}
+
+
+/* Footer logo */
+
+.footer-logo {
+    width: 40%;
+}
+
+
+.footer-logo h2 {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-logo p {
+    color: #cccccc;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* Corporate office */
+
+.office {
+    width: 45%;
+}
+
+
+.office h3 {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.office p {
+    color: #cccccc;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+/* ================= MAP ================= */
+
+.map-section {
+    width: 40%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.map-section h2 {
+    color: #982bd0;
+    font-size: 38px;
+    margin-bottom: 35px;
+}
+
+.map-container {
+    width: 100%;
+    height: 450px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 3px 14px rgba(0, 0, 0, 0.30);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 17px;
+    }
+
+    .contact-section {
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .learning-section {
+        width: 90%;
+    }
+
+    .footer-content {
+        width: 90%;
+
+        gap: 100px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .contact-title h1 {
+        font-size: 45px;
+    }
+
+    .form-card {
+        padding: 35px 25px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 30px;
+    }
+
+}

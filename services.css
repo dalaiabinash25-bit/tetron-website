@@ -1,0 +1,773 @@
+/* =========================================
+   BASIC RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: white;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    height: 75px;
+
+   background: linear-gradient(
+        90deg,
+        #7b2cbf,
+        #4b176d,
+        #15101b
+    );
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 8%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* Logo */
+
+.logo {
+    color: white;
+
+    font-size: 45px;
+    font-weight: bold;
+
+    letter-spacing: -2px;
+
+    flex: 1;
+}
+
+
+/* Navigation */
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 23px;
+
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #00bfff;
+}
+
+.navbar nav a.active {
+    color: #00bfff;
+}
+
+
+/* =========================================
+   SERVICES TITLE
+========================================= */
+
+.services-title {
+    text-align: center;
+
+    padding-top: 45px;
+    padding-bottom: 80px;
+}
+
+.services-title h1 {
+    color: #9633cf;
+
+    font-size: 48px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   COMMON SERVICE SECTION
+========================================= */
+
+.service-section {
+    width: 86%;
+
+    margin: 0 auto;
+
+    min-height: 560px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+
+    padding: 40px 0 90px;
+}
+
+
+/* Reverse section */
+
+.service-section.reverse {
+    flex-direction: row-reverse;
+}
+
+
+/* =========================================
+   SERVICE CONTENT
+========================================= */
+
+.service-content {
+    width: 58%;
+}
+
+.service-content h2 {
+    color: #9633cf;
+
+    font-size: 34px;
+
+    margin-bottom: 35px;
+}
+
+.service-content p {
+    font-size: 20px;
+
+    line-height: 1.55;
+
+    font-weight: 600;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   SERVICE IMAGE
+========================================= */
+
+.service-image {
+    width: 38%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.service-image img {
+    width: 100%;
+
+    max-width: 520px;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   TECHNOLOGY CARDS
+========================================= */
+
+.technology-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+    max-width: 920px;
+}
+
+
+.technology-card {
+    height: 112px;
+
+    background: white;
+
+    border-radius: 13px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    transition: 0.3s;
+}
+
+
+.technology-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.technology-card img {
+    width: 55px;
+
+    height: 55px;
+
+    object-fit: contain;
+}
+
+
+.technology-card span {
+    font-size: 25px;
+
+    color: #111;
+}
+
+
+/* Mobile technology */
+
+.mobile-tech {
+    grid-template-columns: repeat(2, 280px);
+
+    max-width: 600px;
+}
+
+
+/* =========================================
+   HOW WE WORK
+========================================= */
+
+.how-we-work {
+    background: #fbf1ff;
+
+    padding: 55px 8% 70px;
+
+    display: grid;
+
+    grid-template-columns: 30% 70%;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+
+/* Title */
+
+.work-title {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.work-title h2 {
+    color: #9633cf;
+
+    font-size: 40px;
+}
+
+
+.arrow {
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    background: #9633cf;
+
+    color: white;
+
+    font-size: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    line-height: 1;
+}
+
+
+/* Work cards */
+
+.work-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.work-card {
+    min-height: 210px;
+
+    background: #fff7ff;
+
+    border-radius: 14px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+.work-card h3 {
+    color: #9633cf;
+
+    font-size: 25px;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.work-card p {
+    font-size: 19px;
+
+    line-height: 1.5;
+
+    font-weight: 600;
+}
+
+
+/* Fifth card */
+
+.work-card:last-child {
+    grid-column: 2;
+}
+
+
+/* =========================================
+   CUSTOM SOLUTION
+========================================= */
+
+.custom-solution {
+    width: 78%;
+
+    margin: 0 auto;
+
+    padding: 15px 0 40px;
+}
+
+
+.custom-solution > h2 {
+    color: #9633cf;
+
+    font-size: 32px;
+
+    margin-bottom: 35px;
+}
+
+
+.custom-solution > p {
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    font-weight: 600;
+
+    margin-bottom: 50px;
+}
+
+
+/* =========================================
+   CONTACT SERVICE
+========================================= */
+
+.contact-service {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+
+/* Contact image */
+
+.contact-image img {
+    width: 100%;
+
+    height: 360px;
+
+    object-fit: cover;
+}
+
+
+/* Contact form */
+
+.contact-form h3 {
+    color: #9633cf;
+
+    font-size: 27px;
+
+    margin-bottom: 30px;
+}
+
+
+.contact-form h2 {
+    color: #9633cf;
+
+    font-size: 40px;
+
+    margin-bottom: 40px;
+}
+
+
+.contact-form form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+
+.contact-form input {
+    width: 100%;
+
+    height: 50px;
+
+    padding: 0 12px;
+
+    font-size: 18px;
+
+    border: 1px solid #c9c9c9;
+
+    border-radius: 3px;
+
+    outline: none;
+}
+
+
+.contact-form input:focus {
+    border-color: #9633cf;
+}
+
+
+.contact-form button {
+    width: 195px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 3px;
+
+    background: #9633cf;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.contact-form button:hover {
+    background: #7200a0;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    min-height: 250px;
+
+    padding: 60px 10%;
+
+    background-color: #171717;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 60px;
+}
+
+
+/* Footer logo */
+
+.footer-logo {
+    width: 40%;
+}
+
+
+.footer-logo h2 {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-logo p {
+    color: #cccccc;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* Corporate office */
+
+.office {
+    width: 45%;
+}
+
+
+.office h3 {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.office p {
+    color: #cccccc;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .navbar nav {
+        gap: 18px;
+    }
+
+    .navbar nav a {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 38px;
+    }
+
+
+    .service-section {
+        width: 90%;
+
+        gap: 40px;
+    }
+
+
+    .technology-card span {
+        font-size: 20px;
+    }
+
+}
+
+
+/* Tablet */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .navbar nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .service-section,
+    .service-section.reverse {
+        flex-direction: column;
+
+        text-align: center;
+
+        width: 90%;
+    }
+
+
+    .service-content {
+        width: 100%;
+    }
+
+
+    .service-image {
+        width: 80%;
+    }
+
+
+    .technology-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .mobile-tech {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .how-we-work {
+        grid-template-columns: 1fr;
+    }
+
+
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .work-card:last-child {
+        grid-column: auto;
+    }
+
+
+    .contact-service {
+        grid-template-columns: 1fr;
+    }
+
+
+    .custom-solution {
+        width: 90%;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+    .navbar nav {
+        gap: 12px;
+    }
+
+
+    .navbar nav a {
+        font-size: 15px;
+    }
+
+
+    .services-title h1 {
+        font-size: 35px;
+    }
+
+
+    .service-content h2 {
+        font-size: 27px;
+    }
+
+
+    .service-content p {
+        font-size: 17px;
+    }
+
+
+    .technology-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .mobile-tech {
+        grid-template-columns: 1fr;
+    }
+
+
+    .technology-card {
+        width: 100%;
+    }
+
+
+    .service-image {
+        width: 100%;
+    }
+
+
+    .work-title h2 {
+        font-size: 30px;
+    }
+
+
+    .custom-solution > h2 {
+        font-size: 27px;
+    }
+
+
+    .contact-form h2 {
+        font-size: 30px;
+    }
+
+
+    .footer-content {
+        flex-direction: column;
+
+        gap: 25px;
+
+        text-align: center;
+    }
+
+}

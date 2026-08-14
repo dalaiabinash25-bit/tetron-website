@@ -1,0 +1,409 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f9fc;
+    color: #66727e;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 75px;
+    width: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #7428ad,
+        #511574,
+        #17101f
+    );
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* Logo */
+
+.logo {
+    color: white;
+
+    font-size: 44px;
+    font-weight: bold;
+
+    letter-spacing: -2px;
+
+    width: 40%;
+}
+
+
+/* Navigation */
+
+.nav-links {
+    width: 60%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 23px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+/* Hover */
+
+.nav-links a:hover {
+    color: #00bfff;
+}
+
+
+/* Active page */
+
+.nav-links a.active {
+    color: #00bfff;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.policy-header {
+
+    height: 145px;
+
+    background-color: #eef4f8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.policy-header h1 {
+
+    color: #111827;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* =========================
+   MAIN POLICY CONTAINER
+========================= */
+
+.policy-container {
+
+    width: 83%;
+
+    margin: 95px auto 0;
+
+    background-color: white;
+
+    padding: 58px 62px 80px;
+
+    min-height: 900px;
+}
+
+
+/* Main heading */
+
+.policy-container h2 {
+
+    color: #111827;
+
+    font-size: 38px;
+
+    margin-bottom: 34px;
+}
+
+
+/* =========================
+   POLICY SECTIONS
+========================= */
+
+.policy-section {
+
+    margin-bottom: 42px;
+}
+
+
+/* Section heading */
+
+.policy-section h3 {
+
+    color: #66727e;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+
+/* Paragraph */
+
+.policy-section p {
+
+    color: #66727e;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    margin-bottom: 10px;
+}
+
+
+/* Lists */
+
+.policy-section ul {
+
+    padding-left: 38px;
+
+    margin-top: 20px;
+}
+
+.policy-section li {
+
+    color: #66727e;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    margin-bottom: 4px;
+}
+
+
+/* Website */
+
+.website-name {
+
+    color: #0878ff;
+}
+
+
+/* Contact link */
+
+.policy-section a {
+
+    color: #0878ff;
+
+    text-decoration: none;
+}
+
+.policy-section a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .logo {
+
+        width: 30%;
+        font-size: 38px;
+    }
+
+    .nav-links {
+
+        width: 70%;
+        gap: 20px;
+    }
+
+    .nav-links a {
+
+        font-size: 18px;
+    }
+
+    .policy-container {
+
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .navbar {
+
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .logo {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .nav-links {
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .nav-links a {
+
+        font-size: 17px;
+    }
+
+    .policy-header {
+
+        height: 180px;
+    }
+
+    .policy-header h1 {
+
+        font-size: 34px;
+    }
+
+    .policy-container {
+
+        width: 94%;
+
+        margin-top: 50px;
+
+        padding: 35px 25px;
+    }
+
+    .policy-container h2 {
+
+        font-size: 30px;
+    }
+
+    .policy-section p,
+    .policy-section li {
+
+        font-size: 17px;
+    }
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    min-height: 250px;
+
+    padding: 60px 10%;
+
+    background-color: #171717;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 60px;
+}
+
+
+/* Footer logo */
+
+.footer-logo {
+    width: 40%;
+}
+
+
+.footer-logo h2 {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-logo p {
+    color: #cccccc;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* Corporate office */
+
+.office {
+    width: 45%;
+}
+
+
+.office h3 {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.office p {
+    color: #cccccc;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}

@@ -1,0 +1,816 @@
+/* ==============================
+   BASIC RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+
+/* ==============================
+   NAVBAR
+================================= */
+
+.navbar {
+    height: 75px;
+    background: linear-gradient(
+        90deg,
+        #7b2cbf,
+        #4b176d,
+        #15101b
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+}
+
+
+/* Tetron logo */
+
+.logo {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+/* Navigation */
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+/* Active Home */
+
+.navbar nav a.active {
+    color: #00a9e8;
+}
+
+
+/* Mouse hover */
+
+.navbar nav a:hover {
+    color: #00a9e8;
+}
+
+
+/* ==============================
+   HERO SECTION
+================================= */
+
+.hero {
+    min-height: 560px;
+
+    background: linear-gradient(
+        110deg,
+        #7628a9,
+        #511574,
+        #1c0d29
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 60px 12%;
+}
+
+
+/* Hero text */
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    color: white;
+
+    font-size: 46px;
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    margin-bottom: 45px;
+}
+
+
+/* Know More button */
+
+.hero-btn {
+    display: inline-block;
+
+    background-color: white;
+    color: #4b176d;
+
+    text-decoration: none;
+
+    padding: 12px 28px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #d9a7ff;
+    color: white;
+}
+
+
+/* Hero image area */
+
+.hero-image {
+    width: 45%;
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==============================
+   OUR SERVICES
+================================= */
+
+.services {
+    background-color: #ffffff;
+    padding: 70px 10%;
+}
+
+
+/* Main heading */
+
+.services > h2 {
+    text-align: center;
+
+    color: #a64caf;
+
+    font-size: 36px;
+
+    margin-bottom: 70px;
+}
+
+
+/* Service section layout */
+
+.service-content {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+
+/* Left side */
+
+.service-text {
+    width: 60%;
+}
+
+
+/* Service title */
+
+.service-text h3 {
+    color: #8e449d;
+
+    font-size: 28px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Description */
+
+.service-text p {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #333;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==============================
+   TECHNOLOGY CARDS
+================================= */
+
+.technology-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.technology {
+    min-height: 80px;
+
+    background-color: #f8f9fa;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 19px;
+
+    color: #333;
+
+    transition: 0.3s;
+}
+
+
+/* Card hover */
+
+.technology:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+
+    background-color: #ffffff;
+}
+
+
+/* Right image area */
+
+.service-image {
+    width: 35%;
+
+    min-height: 300px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+/* ==============================
+   ANDROID & IOS DEVELOPMENT
+================================= */
+
+.mobile-development {
+    min-height: 500px;
+
+    padding: 70px 10%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+
+    background-color: #ffffff;
+}
+
+
+/* Left image */
+
+.mobile-image {
+    width: 38%;
+
+    min-height: 350px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* Right content */
+
+.mobile-text {
+    width: 58%;
+}
+
+
+/* Heading */
+
+.mobile-text h3 {
+    color: #a64caf;
+
+    font-size: 28px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Description */
+
+.mobile-text p {
+    color: #333;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* Technology cards */
+
+.mobile-tech {
+    grid-template-columns: repeat(2, 230px);
+
+    justify-content: start;
+}
+
+
+
+/* ==============================
+   UI & UX DESIGN
+================================= */
+
+.uiux {
+    min-height: 500px;
+
+    padding: 70px 10%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+
+    background-color: #ffffff;
+}
+
+
+/* Left content */
+
+.uiux-text {
+    width: 55%;
+}
+
+
+/* Heading */
+
+.uiux-text h3 {
+    color: #a64caf;
+
+    font-size: 28px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Description */
+
+.uiux-text p {
+    color: #333;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+}
+
+
+/* Right image */
+
+.uiux-image {
+    width: 40%;
+
+    min-height: 350px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+/* ==============================
+   CRM SOFTWARE
+================================= */
+
+.crm {
+    min-height: 500px;
+
+    padding: 70px 10%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+
+    background-color: #ffffff;
+}
+
+
+/* Left image */
+
+.crm-image {
+    width: 40%;
+
+    min-height: 350px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* Right content */
+
+.crm-text {
+    width: 55%;
+}
+
+
+/* Heading */
+
+.crm-text h3 {
+    color: #a64caf;
+
+    font-size: 28px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Description */
+
+.crm-text p {
+    color: #333;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+}
+
+/* ==============================
+   TRUSTED COMPANIES
+================================= */
+
+.trusted {
+    min-height: 300px;
+
+    padding: 60px 10%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    background-color: #f8f8f8;
+}
+
+
+/* Left heading */
+
+.trusted-title {
+    width: 35%;
+}
+
+.trusted-title h2 {
+    color: #a64caf;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+}
+
+
+/* Company logos area */
+
+.company-logos {
+    width: 60%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 35px;
+}
+
+
+/* Company names */
+
+.company-logos span {
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #555;
+
+    padding: 15px 20px;
+
+    transition: 0.3s;
+}
+
+
+/* Hover effect */
+
+.company-logos span:hover {
+    color: #8e449d;
+
+    transform: translateY(-3px);
+}
+
+/* ==============================
+   WHY CHOOSE US
+================================= */
+
+.why-us {
+    min-height: 650px;
+
+    padding: 80px 10%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+
+    background-color: #ffffff;
+}
+
+
+/* Left illustration */
+
+.why-image {
+    width: 40%;
+
+    min-height: 450px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* Right content */
+
+.why-content {
+    width: 55%;
+}
+
+
+/* Small heading */
+
+.small-title {
+    color: #a64caf;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* Main heading */
+
+.why-content > h2 {
+    color: #333;
+
+    font-size: 30px;
+
+    line-height: 1.4;
+
+    margin-bottom: 35px;
+}
+
+
+/* Individual reasons */
+
+.reason {
+    margin-bottom: 25px;
+}
+
+
+/* Reason heading */
+
+.reason h3 {
+    color: #8e449d;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Reason paragraph */
+
+.reason p {
+    color: #555;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+/* ==============================
+   CONTACT SECTION
+================================= */
+
+.contact {
+    min-height: 180px;
+
+    padding: 50px 10%;
+
+    background: linear-gradient(
+        90deg,
+        #7628a9,
+        #511574,
+        #1c0d29
+    );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+/* Contact buttons */
+
+.contact button {
+    padding: 14px 28px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: white;
+
+    color: #6d238f;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Button hover */
+
+.contact button:hover {
+    background-color: #d9a7ff;
+
+    color: white;
+}
+
+
+/* Contact input */
+
+.contact input {
+    width: 280px;
+
+    padding: 14px 18px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+    min-height: 250px;
+
+    padding: 60px 10%;
+
+    background-color: #171717;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 60px;
+}
+
+
+/* Footer logo */
+
+.footer-logo {
+    width: 40%;
+}
+
+
+.footer-logo h2 {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-logo p {
+    color: #cccccc;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* Corporate office */
+
+.office {
+    width: 45%;
+}
+
+
+.office h3 {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.office p {
+    color: #cccccc;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}

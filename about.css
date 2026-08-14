@@ -1,0 +1,310 @@
+/* ==============================
+   BASIC RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+
+/* ==============================
+   NAVBAR
+================================= */
+
+.navbar {
+    width: 100%;
+
+    height: 75px;
+
+    background: linear-gradient(
+        90deg,
+        #7428ad,
+        #511574,
+        #17101f
+    );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    box-sizing: border-box;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 1000;
+}
+
+
+/* Logo */
+
+.logo {
+    color: white;
+
+    font-size: 38px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+}
+
+
+/* Links */
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+
+/* Hover */
+
+.nav-links a:hover {
+    color: #00bfff;
+}
+
+
+/* Active page */
+
+.nav-links a.active {
+    color: #00bfff;
+}
+
+/* ==============================
+   ABOUT SECTION
+================================= */
+
+.about-section {
+    min-height: 700px;
+
+    padding: 70px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 70px;
+
+    background-color: white;
+}
+
+
+/* Image */
+
+.about-image {
+    width: 45%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.about-image img {
+    width: 100%;
+
+    max-width: 550px;
+
+    height: auto;
+}
+
+
+/* Content */
+
+.about-content {
+    width: 55%;
+}
+
+
+.about-content h1 {
+    color: #922dcc;
+
+    font-size: 48px;
+
+    margin-bottom: 12px;
+}
+
+
+.heading-line {
+    width: 255px;
+
+    height: 2px;
+
+    background-color: #a52bd7;
+
+    margin-bottom: 55px;
+}
+
+
+.about-content p {
+    color: #111;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+}
+
+
+/* ==============================
+   VISION & MISSION
+================================= */
+
+.vision-mission {
+    min-height: 600px;
+
+    padding: 60px 8% 90px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 70px;
+
+    background-color: white;
+}
+
+
+/* Cards */
+
+.info-card {
+    width: 45%;
+
+    min-height: 500px;
+
+    padding: 60px 40px;
+
+    background-color: #faf2ff;
+
+    border-radius: 25px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+
+.info-card h2 {
+    color: #922dcc;
+
+    font-size: 38px;
+
+    margin-bottom: 25px;
+}
+
+
+.info-card p {
+    color: #111;
+
+    font-size: 19px;
+
+    line-height: 1.55;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    min-height: 250px;
+
+    padding: 60px 10%;
+
+    background-color: #171717;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 60px;
+}
+
+
+/* Footer logo */
+
+.footer-logo {
+    width: 40%;
+}
+
+
+.footer-logo h2 {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-logo p {
+    color: #cccccc;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* Corporate office */
+
+.office {
+    width: 45%;
+}
+
+
+.office h3 {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.office p {
+    color: #cccccc;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
