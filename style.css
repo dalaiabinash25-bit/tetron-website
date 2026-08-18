@@ -814,3 +814,49 @@ footer {
 
     line-height: 1.8;
 }
+
+.map-container {
+    width: 20%;
+    height: 100px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 3px 14px rgba(0, 0, 0, 0.30);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+/*moving sentence*/
+.announcement {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f5f9fc;
+    padding: 12px 0;
+}
+
+.moving-content {
+    white-space: nowrap;
+    display: run-in;
+
+    animation: moveText 15s linear infinite;
+}
+
+@keyframes moveText {
+
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}

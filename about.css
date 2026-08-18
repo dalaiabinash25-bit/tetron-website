@@ -308,3 +308,30 @@ footer {
 
     line-height: 1.8;
 }
+
+/*moving sentence*/
+.announcement {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f5f9fc;
+    padding: 12px 0;
+}
+
+.moving-content {
+    white-space: nowrap;
+    display: run-in;
+
+    animation: moveText 15s linear infinite;
+}
+
+@keyframes moveText {
+
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
