@@ -16,7 +16,7 @@ body {
 /* ================= NAVBAR ================= */
 
 .navbar {
-    height: 75px;
+    height: 50px;
     background: linear-gradient(
         90deg,
         #7b2cbf,
@@ -26,63 +26,65 @@ body {
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
-    padding: 0 8%;
+    padding: 0 10%;
 
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+
+    width: 100%;
 
     z-index: 1000;
 }
 
 
-/* LOGO */
+/* Tetron logo */
 
 .logo {
     color: white;
-    font-size: 45px;
+    font-size: 32px;
     font-weight: bold;
-
-    flex: 1;
 }
 
 
-/* NAV LINKS */
+/* Navigation */
 
-.nav-links {
+.navbar nav {
     display: flex;
-    align-items: center;
-    gap: 27px;
+    gap: 28px;
 }
 
-.nav-links a {
-    text-decoration: none;
+.navbar nav a {
     color: white;
-
-    font-size: 24px;
-    font-weight: 500;
-
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
     transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: #00bfff;
+
+/* Active Home */
+
+.navbar nav a.active {
+    color: #00a9e8;
 }
 
 
-/* ACTIVE PAGE */
+/* Mouse hover */
 
-.nav-links a.active {
-    color: #00bfff;
+.navbar nav a:hover {
+    color: #00a9e8;
 }
 
 
 /* ================= CONTACT TITLE ================= */
 
 .contact-title {
-    margin: 3px 2% 0;
+    margin: 10px 2% 0;
 
-    height: 125px;
+    height: 150px;
 
     background: #36004d;
 

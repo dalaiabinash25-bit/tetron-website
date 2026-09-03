@@ -24,78 +24,66 @@ body {
 ========================= */
 
 .navbar {
-    height: 75px;
-    width: 100%;
-
+    height: 50px;
     background: linear-gradient(
         90deg,
-        #7428ad,
-        #511574,
-        #17101f
+        #7b2cbf,
+        #4b176d,
+        #15101b
     );
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
-    padding-left: 8.5%;
-    padding-right: 8.5%;
+    padding: 0 10%;
 
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+
+    width: 100%;
 
     z-index: 1000;
 }
 
 
-/* Logo */
+/* Tetron logo */
 
 .logo {
     color: white;
-
-    font-size: 44px;
+    font-size: 32px;
     font-weight: bold;
-
-    letter-spacing: -2px;
-
-    width: 40%;
 }
 
 
 /* Navigation */
 
-.nav-links {
-    width: 60%;
-
+.navbar nav {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    gap: 30px;
+    gap: 28px;
 }
 
-.nav-links a {
+.navbar nav a {
     color: white;
-
     text-decoration: none;
-
-    font-size: 23px;
-    font-weight: 500;
-
+    font-size: 17px;
+    font-weight: 600;
     transition: 0.3s;
 }
 
 
-/* Hover */
+/* Active Home */
 
-.nav-links a:hover {
-    color: #00bfff;
+.navbar nav a.active {
+    color: #00a9e8;
 }
 
 
-/* Active page */
+/* Mouse hover */
 
-.nav-links a.active {
-    color: #00bfff;
+.navbar nav a:hover {
+    color: #00a9e8;
 }
 
 
